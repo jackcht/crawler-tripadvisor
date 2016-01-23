@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost/tripadvisor</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">cht009</property>
+        
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <!-- Disable the second-level cache  -->  
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>    
+         
+        <property name="hbm2ddl.auto">create</property>
+        <property name="show_sql">true</property>
+
+        <mapping class="com.model.Attraction"/>
+  		<!-- <mapping class="com.model.Location"/>  -->
+  		<mapping class="com.model.Review"/>
+  		
+        
+    </session-factory>
+      
+</hibernate-configuration>
