@@ -6,5 +6,5 @@ It supports www.tripadvisor.com.sg as it is in April 2015
 
 A sub project for CZ4034 Information Retrieval
 
-
+Detailed project information can be found in the docs/ folder, illustrating the tripadvisor webpage structure and the crawler
 
