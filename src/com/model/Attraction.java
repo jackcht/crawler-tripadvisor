@@ -2,7 +2,6 @@ package com.model;
 
 import java.util.*;
 
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -21,27 +20,27 @@ public class Attraction {
 	
 	private String _attractionId;		// d2439664
 	
-	private String _name;			// Universal Studio Singapore
+	private String _name;				// Universal Studio Singapore
 
-	private float _rating;			// like 4.5, 5.0, etc. 
+	private float _rating;				// like 4.5, 5.0, etc. 
 	
-	private int _numOfReviews;		// 6488
+	private int _numOfReviews;			// 6488
 	
-	private Date _crawlDate; 		// timestamp
+	private Date _crawlDate; 			// timestamp
 	
-	private Set<Review> _reviews;	// set of all the reviews
+	private Set<Review> _reviews;		// set of all the reviews
 	
-	private String _description;	// long text
+	private String _description;		// long text
 	
-	private String _imgSource; 		// representing pic
+	private String _imgSource; 			// representing pic
 	
-	private String _url; 			// original URL
+	private String _url; 				// original URL
 	
-	private String _location;		// location (one of the 4)
+	private String _location;			// location (one of the 4)
 	
-	private String _gpsLatitude;			// latitude;		1.281566
+	private String _gpsLatitude;		// latitude;		1.281566
 	
-	private String _gpsLongtitude; 			// longitude;		103.86361
+	private String _gpsLongtitude; 		// longitude;		103.86361
 	
 	
 	public Attraction(){
@@ -169,8 +168,6 @@ public class Attraction {
 	public void setLongitude(String lng){
 		_gpsLongtitude = lng;
 	}
-	
-	
 	
 	public String toString(){
 		StringBuilder sb = new StringBuilder("Attraction: [ ");
