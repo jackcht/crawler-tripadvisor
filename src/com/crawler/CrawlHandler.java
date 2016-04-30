@@ -11,9 +11,7 @@ import com.parser.AttractionParser;
 import com.parser.ReviewParser;
 
 /**
- * [CHEN HAOTING] Modified from crawler-tripadvisor/src/it/thecrawlers/crawler/CrawlHandler.java from "https://github.com/dangrasso/crawler-tripadvisor"
- * @author CHT
- *
+ * [HAOTING CHEN] Forked from crawler-tripadvisor/src/it/thecrawlers/crawler/CrawlHandler.java from "https://github.com/dangrasso/crawler-tripadvisor"
  */
 public class CrawlHandler {
 	
@@ -63,7 +61,7 @@ public class CrawlHandler {
 		this.idReviewMap.put(id, review);
 	}
 	
-	//attractionIdToReviewMap				for saving the reviews to respective reviews 
+	//attractionIdToReviewMap:	for saving the reviews to respective reviews 
 	public Map<String, List<Review>> getAttractionIdToReviewMap(){
 		return attractionIdToReviewMap;
 	}
@@ -82,8 +80,7 @@ public class CrawlHandler {
 		
 	}
 	
-	
-	//
+
 	public Review parseReview(String html,String path){
 		return this.reviewParser.parseReview(html,path);
 	}
