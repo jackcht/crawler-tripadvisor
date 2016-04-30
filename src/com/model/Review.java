@@ -13,12 +13,12 @@ import org.hibernate.annotations.Type;
 @Entity
 public class Review {
 	
-	private String _reviewId;		// such as r257068853
+	private String _reviewId;			// such as r257068853
 	private String _content = "";		// full text
-	private Rating _rating;			// Enum: terrible/poor/average/verygood/excellent
-	private Date _date;				// time stamp
-	private String _title;			// 'small but fun'
-	private String _author;			// Amna S
+	private Rating _rating;				// Enum: terrible/poor/average/verygood/excellent
+	private Date _date;					// time stamp
+	private String _title;				// 'small but fun'
+	private String _author;				// Amna S
 	private int _wordCount = 0;			// word count
 
 	public Review(){
