@@ -33,9 +33,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * [CHEN HAOTING] Modified from the crawler4j/examples/basic/BasicCrawlController.java in the library
- * @author CHT
- *
+ * [HAOTING CHEN] Modified from the crawler4j library code (crawler4j/examples/basic/BasicCrawlController.java)
  */
 
 public class MainController {
@@ -124,9 +122,9 @@ public class MainController {
 	     * URLs that are fetched and then the crawler starts following links
 	     * which are found in these pages
 	     */
+
 	    //controller.addSeed("http://www.tripadvisor.com.sg/Tourism-g294262-Singapore-Vacations.html");
 	    //controller.addSeed("http://www.tripadvisor.com.sg/Attractions-g294262-Activities-Singapore.html");
-	    
 	    controller.addSeed("http://www.tripadvisor.com.sg/Attractions-g294265-Activities-Singapore.html");
 	    controller.addSeed("http://www.tripadvisor.com.sg/Attractions-g294264-Activities-Sentosa_Island.html");
 	    controller.addSeed("http://www.tripadvisor.com.sg/Attractions-g1644875-Activities-Pulau_Ubin.html");
@@ -214,9 +212,7 @@ public class MainController {
 		log.info("Total Attraction count: "+ handler.count);
 		log.info("Total Word Count for " + reviewsTotal + " reviews: " + wordCount);
 		
-	    
-		
-		// Wait for 30 seconds
+		// Wait for 30 seconds (can be changed)
 	    Thread.sleep(30 * 1000);
 
 	    // Send the shutdown request and then wait for finishing
